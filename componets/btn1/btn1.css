@@ -1,0 +1,41 @@
+:root {
+    --x-btn1: 45deg;
+}
+
+#btn1 {
+    position: relative;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00e1ff;
+    cursor: pointer;
+}
+
+#btn1 i {
+    position: absolute;
+    inset: -2px;
+    display: block;
+    border-radius: 5px;
+    background: red;
+}
+
+#btn1 i,
+#btn1 i:nth-child(2) {
+    background: linear-gradient(var(--x-btn1), red, yellow, lime);
+}
+
+#btn1 i:nth-child(2) {
+    filter: blur(10px);
+}
+
+#btn1 p,
+#btn1 span {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#btn1 span {
+    position: absolute;
+    left: 20px;
+}
